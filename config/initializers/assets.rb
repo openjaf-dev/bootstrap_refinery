@@ -11,6 +11,7 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w( compiled/theme.css )
 Rails.application.config.assets.precompile += %w( vendor/animate.css )
 Rails.application.config.assets.precompile += %w( vendor/flexslider.css )
+Rails.application.config.assets.precompile += %w( vendor/font-awesome.min.css )
 
 #JS
 Rails.application.config.assets.precompile += %w( jquery.js )
