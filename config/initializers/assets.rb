@@ -10,7 +10,9 @@ Rails.application.config.assets.version = '1.0'
 #CSS
 Rails.application.config.assets.precompile += %w( compiled/theme.css )
 Rails.application.config.assets.precompile += %w( vendor/animate.css )
+Rails.application.config.assets.precompile += %w( vendor/flexslider.css )
 
 #JS
 Rails.application.config.assets.precompile += %w( bootstrap/bootstrap.min.js )
 Rails.application.config.assets.precompile += %w( theme.js )
+Rails.application.config.assets.precompile += %w( vendor/jquery.flexslider.min.js )
