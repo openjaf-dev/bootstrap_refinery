@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get '/about_us' => 'application#about_us', :as => 'about_us'
   get '/home_1' => 'application#home_1', :as => 'home_1'
   get '/home_2' => 'application#home_2', :as => 'home_2'
+  get '/home_3' => 'application#home_3', :as => 'home_3'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

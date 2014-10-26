@@ -16,6 +16,10 @@ class ApplicationController < ActionController::Base
     render 'layouts/home_2'
   end
 
+  def home_3
+    render 'layouts/home_3'
+  end
+
   def login_view
     render 'layouts/sign_in_up'
   end
@@ -28,6 +32,8 @@ class ApplicationController < ActionController::Base
       'home_1'
     elsif action == 'home_2'
       'home_2'
+    elsif action == 'home_3'
+      'home_3'
     elsif action == 'login_view'
       'sign_in_up'
     end
