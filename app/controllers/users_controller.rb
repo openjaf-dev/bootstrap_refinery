@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
-  layout 'sign_in_up', only: [:login]
 
   # GET /users
   # GET /users.json
@@ -79,7 +78,7 @@ class UsersController < ApplicationController
     else
       flash[:error] = 'You need to enter your credentials!!!'
     end
-    render 'layouts/sign_in_up'
+    redirect_to login_view
   end
 
   def sign_up

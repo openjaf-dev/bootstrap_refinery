@@ -9,7 +9,8 @@ Rails.application.routes.draw do
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
-  post 'users/login/' => 'users#login', :as => 'login'
+  get '/login_view' => 'application#login_view', :as => 'login_view'
+  post 'users/login' => 'users#login', :as => 'login'
   post 'users/sign_up' => 'users#sign_up', :as => 'sign_up'
   get '/about_us' => 'application#about_us', :as => 'about_us'
   get '/home_1' => 'application#home_1', :as => 'home_1'

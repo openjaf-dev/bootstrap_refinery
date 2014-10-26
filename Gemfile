@@ -1,5 +1,5 @@
-source 'https://rubygems.org'
-
+#source 'https://rubygems.org'
+source 'file:///home/jorge/mygems/'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
