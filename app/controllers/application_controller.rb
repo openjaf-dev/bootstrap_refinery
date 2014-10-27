@@ -36,6 +36,8 @@ class ApplicationController < ActionController::Base
       'home_3'
     elsif action == 'login_view'
       'sign_in_up'
+    elsif action == 'about_us'
+      'about_us'
     end
   end
 

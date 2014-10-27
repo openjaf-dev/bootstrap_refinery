@@ -172,7 +172,7 @@
         </p>
         <div class="cta animated fadeInRight">
           <%= link_to 'See the tour', '#', :class => 'button-outline' %>
-          <%= link_to 'Sign up free', login_path , :class => 'button' %>
+          <%= link_to 'Sign up free', login_view_path , :class => 'button' %>
         </div>
       </div>
     </div>
@@ -261,7 +261,7 @@
               Transaction fee
             </div>
           </div>
-          <%= link_to login_path, :class => 'btn-signup button-clear' do %>
+          <%= link_to login_view_path, :class => 'btn-signup button-clear' do %>
               <span>Start free trial</span>
           <% end %>
         </div>
@@ -297,7 +297,7 @@
               Transaction fee
             </div>
           </div>
-          <%= link_to login_path, :class => 'btn-signup button-clear' do %>
+          <%= link_to login_view_path, :class => 'btn-signup button-clear' do %>
               <span>Start free trial</span>
           <% end %>
         </div>
@@ -332,7 +332,7 @@
               Transaction fee
             </div>
           </div>
-          <%= link_to login_path, :class => 'btn-signup button-clear' do %>
+          <%= link_to login_view_path, :class => 'btn-signup button-clear' do %>
               <span>Start free trial</span>
           <% end %>
         </div>
@@ -517,7 +517,7 @@
           <p>
             Sign up for the newsletter and we'll inform you of updates, offers and more.
           </p>
-          <%= form_tag login_path do %>
+          <%= form_tag login_view_path do %>
             <%= email_field_tag :email, nil, :class => 'form-control', :placeholder => 'Your email address' %>
             <%= submit_tag 'Sign up' %>
           <% end %>

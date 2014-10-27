@@ -114,7 +114,7 @@
     </p>
     <div class="cta animated fadeInDown">
       <a href="features.html" class="button-outline">See the tour</a>
-      <%= link_to 'Sign up free', login_path ,:class => 'button'%>
+      <%= link_to 'Sign up free', login_view_path ,:class => 'button'%>
     </div>
     <div class="img"></div>
   </div>
@@ -199,7 +199,7 @@
               Transaction fee
             </div>
           </div>
-          <%= link_to login_path, :class => 'btn-signup button-clear' do %>
+          <%= link_to login_view_path, :class => 'btn-signup button-clear' do %>
               <span>Start free trial</span>
           <% end %>
         </div>
@@ -235,7 +235,7 @@
               Transaction fee
             </div>
           </div>
-          <%= link_to login_path, :class => 'btn-signup button-clear' do %>
+          <%= link_to login_view_path, :class => 'btn-signup button-clear' do %>
               <span>Start free trial</span>
           <% end %>
         </div>
@@ -270,7 +270,7 @@
               Transaction fee
             </div>
           </div>
-          <%= link_to login_path, :class => 'btn-signup button-clear' do %>
+          <%= link_to login_view_path, :class => 'btn-signup button-clear' do %>
               <span>Start free trial</span>
           <% end %>
         </div>
@@ -361,7 +361,7 @@
   <p>
     Start your free 14 day trial!
   </p>
-  <%= link_to 'Sign up for free', login_path %>
+  <%= link_to 'Sign up for free', login_view_path %>
 </div>
 
 <div id="clients">
@@ -414,16 +414,14 @@
         <h3>Menu</h3>
         <ul>
           <li>
-            <a href="features.html">About us</a>
+            <%= link_to 'About us', about_us_path %>
           </li>
           <li>
             <a href="services.html">Contact us</a>
           </li>
           <li>
-            <a href="aboutus.html">Jobs</a>
-            <a href="aboutus.html" class="hiring">
-              We're hiring!
-            </a>
+            <%= link_to 'Jobs', about_us_path %>
+            <%= link_to 'We\'re hiring!', about_us_path, :class => 'hiring' %>
           </li>
           <li>
             <a href="support.html">Portfolio</a>
@@ -452,7 +450,7 @@
           <p>
             Sign up for the newsletter and we'll inform you of updates, offers and more.
           </p>
-          <%= form_tag login_path do %>
+          <%= form_tag login_view_path do %>
             <%= email_field_tag :email, nil , :class => 'form-control', :placeholder => 'Your email address' %>
             <%= submit_tag 'Sign up' %>
           <% end %>
