@@ -9,17 +9,23 @@
   <!-- stylesheets -->
   <%= stylesheet_link_tag 'compiled/theme' %>
   <%= stylesheet_link_tag 'vendor/animate' %>
+  <% @aditional_css.each do |css| %>
+    <%= stylesheet_link_tag css %>
+  <% end %>
 
   <!-- javascript-->
   <%= javascript_include_tag 'jquery' %>
   <%= javascript_include_tag 'bootstrap/bootstrap.min'  %>
   <%= javascript_include_tag 'theme'  %>
+  <% @aditional_js.each do |js| %>
+      <%= javascript_include_tag js %>
+  <% end %>
 
   <!--[if lt IE 9]>
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
-<body id="home">
+<body id="<%= @body_id %>">
 <header class="navbar navbar-inverse hero" role="banner">
   <div class="container">
     <div class="navbar-header">

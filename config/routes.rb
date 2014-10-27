@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   post 'users/login' => 'users#login', :as => 'login'
   post 'users/sign_up' => 'users#sign_up', :as => 'sign_up'
   get '/about_us' => 'application#about_us', :as => 'about_us'
+  get '/contact_us' => 'application#contact_us', :as => 'contact_us'
   get '/home_1' => 'application#home_1', :as => 'home_1'
   get '/home_2' => 'application#home_2', :as => 'home_2'
   get '/home_3' => 'application#home_3', :as => 'home_3'

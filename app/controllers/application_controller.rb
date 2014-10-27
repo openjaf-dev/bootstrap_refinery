@@ -5,18 +5,30 @@ class ApplicationController < ActionController::Base
   layout :select_layout
 
   def about_us
-    render 'layouts/about_us'
+    @body_id = 'about-us'
+    @aditional_css = ['vendor/animate', 'vendor/flexslider']
+    @aditional_js = ['vendor/jquery.flexslider.min']
+    render 'layouts/_about_us'
+  end
+
+  def contact_us
+    @body_id = 'contact-us'
+    @aditional_js = ['vendor/jquery.validate.min']
+    render 'layouts/_contact_us'
   end
 
   def home_1
+    @body_id = 'home'
     render 'layouts/home_1'
   end
 
   def home_2
+    @body_id = 'home2'
     render 'layouts/home_2'
   end
 
   def home_3
+    @body_id = 'home3'
     render 'layouts/home_3'
   end
 
@@ -36,8 +48,6 @@ class ApplicationController < ActionController::Base
       'home_3'
     elsif action == 'login_view'
       'sign_in_up'
-    elsif action == 'about_us'
-      'about_us'
     end
   end
 
