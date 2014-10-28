@@ -17,6 +17,27 @@ class ApplicationController < ActionController::Base
     render 'layouts/_contact_us'
   end
 
+  def gallery
+    @body_id = 'gallery'
+    @aditional_css = ['vendor/brankic', 'vendor/isotope']
+    @aditional_js = ['vendor/jquery.isotope.min', 'imagesloaded', 'gallery']
+    render 'layouts/_gallery'
+  end
+
+  def portfolio
+    @body_id = 'portfolio'
+    @aditional_css = ['vendor/brankic', 'vendor/isotope']
+    @aditional_js = ['vendor/jquery.isotope.min', 'imagesloaded', 'gallery']
+    render 'layouts/_portfolio'
+  end
+
+  def portfolio_item
+    @body_id = 'portfolio-item'
+    @aditional_css = ['vendor/ionicons.min']
+    @aditional_js = ['vendor/jquery.isotope.min']
+    render 'layouts/portfolio_item'
+  end
+
   def home_1
     @body_id = 'home'
     render 'layouts/home_1'
@@ -48,6 +69,8 @@ class ApplicationController < ActionController::Base
       'home_3'
     elsif action == 'login_view'
       'sign_in_up'
+    elsif action == 'portfolio_item'
+      'portfolio_item'
     end
   end
 
