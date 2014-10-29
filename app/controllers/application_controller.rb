@@ -81,6 +81,11 @@ class ApplicationController < ActionController::Base
     render 'layouts/error_404'
   end
 
+  def features
+    @body_id = 'features'
+    render 'layouts/_features'
+  end
+
   private
 
   def select_layout
