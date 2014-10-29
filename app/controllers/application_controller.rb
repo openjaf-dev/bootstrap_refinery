@@ -33,8 +33,6 @@ class ApplicationController < ActionController::Base
 
   def portfolio_item
     @body_id = 'portfolio-item'
-    @aditional_css = ['vendor/ionicons.min']
-    @aditional_js = ['vendor/jquery.isotope.min']
     render 'layouts/portfolio_item'
   end
 
@@ -57,6 +55,17 @@ class ApplicationController < ActionController::Base
     render 'layouts/sign_in_up'
   end
 
+  def invoice
+    @body_id = 'invoice'
+    render 'layouts/invoice'
+  end
+
+  def timeline
+    @body_id = 'timeline'
+    @aditional_css = ['vendor/ionicons.min']
+    render 'layouts/_timeline'
+  end
+
   private
 
   def select_layout
@@ -71,6 +80,8 @@ class ApplicationController < ActionController::Base
       'sign_in_up'
     elsif action == 'portfolio_item'
       'portfolio_item'
+    elsif action == 'invoice'
+      'invoice'
     end
   end
 

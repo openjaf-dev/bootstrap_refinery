@@ -17,6 +17,8 @@ Rails.application.routes.draw do
   get '/gallery' => 'application#gallery', :as => 'gallery'
   get '/portfolio' => 'application#portfolio', :as => 'portfolio'
   get '/portfolio_item' => 'application#portfolio_item', :as => 'portfolio_item'
+  get '/invoice' => 'application#invoice', :as => 'invoice'
+  get '/timeline' => 'application#timeline', :as => 'timeline'
   get '/home_1' => 'application#home_1', :as => 'home_1'
   get '/home_2' => 'application#home_2', :as => 'home_2'
   get '/home_3' => 'application#home_3', :as => 'home_3'
