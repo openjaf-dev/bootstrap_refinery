@@ -9,16 +9,20 @@
   <!-- stylesheets -->
   <%= stylesheet_link_tag 'compiled/theme' %>
   <%= stylesheet_link_tag 'vendor/animate' %>
-  <% ['vendor/animate', 'vendor/flexslider'].each do |css| %>
-    <%= stylesheet_link_tag css %>
+  <% if @aditional_css %>
+      <% @aditional_css.each do |css| %>
+        <%= stylesheet_link_tag css %>
+      <% end %>
   <% end %>
 
   <!-- javascript-->
   <%= javascript_include_tag 'jquery' %>
   <%= javascript_include_tag 'bootstrap/bootstrap.min'  %>
   <%= javascript_include_tag 'theme'  %>
-  <% ['vendor/jquery.flexslider.min'].each do |js| %>
-      <%= javascript_include_tag js %>
+  <% if @aditional_js %>
+      <% @aditional_js.each do |js| %>
+          <%= javascript_include_tag js %>
+      <% end %>
   <% end %>
 
   <!--[if lt IE 9]>
