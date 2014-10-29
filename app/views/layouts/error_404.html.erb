@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>React - Bootstrap Theme</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>React - Bootstrap Theme</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- stylesheets -->
-    <link rel="stylesheet" type="text/css" href="assets/compiled/theme.css">
+  <!-- stylesheets -->
+  <%= stylesheet_link_tag 'compiled/theme' %>
+  <!-- javascript >
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  -->
+  <%= javascript_include_tag 'jquery' %>
+  <%= javascript_include_tag 'bootstrap/bootstrap.min' %>
+  <%= javascript_include_tag 'vendor/sketch.min' %>
+  <%= javascript_include_tag 'theme' %>
 
-    <!-- javascript >
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    -->
-    <script src="assets/jquery.min.js"></script>
-    <script src="assets/bootstrap/bootstrap.min.js"></script>
-    <script src="assets/vendor/sketch.min.js"></script>
-    <script src="assets/theme.js"></script>
-
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 </head>
 <body id="not-found-alt">
 <div class="info">
-    <h1>404</h1>
-    <p>Oops, the page you're looking for doesn't exist.</p>
+  <h1>404</h1>
+  <p>Oops, the page you're looking for doesn't exist.</p>
 
-    <p class="go-back">
-        Please continue to our <a href="/">Home page</a>.
-    </p>
+  <p class="go-back">
+    Please continue to our <%= link_to 'Home Page', root_path %>.
+  </p>
 </div>
 <div id="container"></div>
 
