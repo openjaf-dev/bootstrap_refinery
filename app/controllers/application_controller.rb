@@ -66,6 +66,12 @@ class ApplicationController < ActionController::Base
     render 'layouts/_timeline'
   end
 
+  def support
+    @body_id = 'support'
+    @aditional_css = ['vendor/ionicons','vendor/font-awesome','vendor/entypo']
+    render 'layouts/_support'
+  end
+
   private
 
   def select_layout

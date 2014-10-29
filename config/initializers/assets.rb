@@ -16,6 +16,8 @@ Rails.application.config.assets.precompile += %w( vendor/font-awesome.css )
 Rails.application.config.assets.precompile += %w( vendor/brankic.css )
 Rails.application.config.assets.precompile += %w( vendor/isotope.css )
 Rails.application.config.assets.precompile += %w( vendor/ionicons.min.css )
+Rails.application.config.assets.precompile += %w( vendor/ionicons.css )
+Rails.application.config.assets.precompile += %w( vendor/entypo.css )
 
 #JS
 Rails.application.config.assets.precompile += %w( jquery.js )
