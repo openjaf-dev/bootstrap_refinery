@@ -18,6 +18,8 @@ Rails.application.config.assets.precompile += %w( vendor/isotope.css )
 Rails.application.config.assets.precompile += %w( vendor/ionicons.min.css )
 Rails.application.config.assets.precompile += %w( vendor/ionicons.css )
 Rails.application.config.assets.precompile += %w( vendor/entypo.css )
+Rails.application.config.assets.precompile += %w( vendor/flipclock.css )
+Rails.application.config.assets.precompile += %w( vendor/flipclock/libs/base.js )
 
 #JS
 Rails.application.config.assets.precompile += %w( jquery.js )
@@ -27,3 +29,5 @@ Rails.application.config.assets.precompile += %w( vendor/jquery.flexslider.min.j
 Rails.application.config.assets.precompile += %w( vendor/jquery.validate.min.js )
 Rails.application.config.assets.precompile += %w( vendor/jquery.isotope.min.js )
 Rails.application.config.assets.precompile += %w( gallery.js )
+Rails.application.config.assets.precompile += %w( vendor/flipclock/flipclock.js )
+Rails.application.config.assets.precompile += %w( vendor/flipclock/faces/hourlycounter.js )

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>React - Bootstrap Theme</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- stylesheets -->
+  <%= stylesheet_link_tag 'compiled/theme' %>
+  <%= stylesheet_link_tag 'vendor/ionicons.min' %>
+  <%= stylesheet_link_tag 'vendor/flipclock' %>
+
+  <!-- javascript >
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  -->
+  <%= javascript_include_tag 'jquery' %>
+  <%= javascript_include_tag 'bootstrap/bootstrap.min'  %>
+  <%= javascript_include_tag 'vendor/flipclock/libs/base'  %>
+  <%= javascript_include_tag 'vendor/flipclock/flipclock'  %>
+  <%= javascript_include_tag 'vendor/flipclock/faces/hourlycounter'  %>
+  <%= javascript_include_tag 'theme' %>
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body id="coming-soon">
+
+<div class="skins-nav">
+  <a href="#" class="skin light active">
+    <span class="text">Light</span>
+    <span class="ion ion-android-checkmark"></span>
+  </a>
+  <a href="#" class="skin dark">
+    <span class="text">Dark</span>
+    <span class="ion ion-android-checkmark"></span>
+  </a>
+</div>
+
+<div class="container">
+  <div class="row info">
+    <div class="col-md-12">
+      <h1><%= link_to 'Cenit SaaS', root_path %>></h1>
+      <h3>We're launching very soon.</h3>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div id="countdown">
+        <div id="clock"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <form class="form-inline" role="form">
+        <div class="form-group">
+          <label class="sr-only" for="exampleInputEmail2">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter your email">
+        </div>
+        <a href="index.html" class="button">Notify me</a>
+        <!-- <button type="submit" class="btn btn-primary">Notify me</button> -->
+      </form>
+    </div>
+  </div>
+
+  <div class="row social">
+    <div class="col-md-12">
+      <a class="ion" href="#"><span class="ion-social-twitter"></span></a>
+      <!-- <a class="ion" href="#"><span class="ion-social-facebook"></span></a> -->
+      <div class="tm">Follow up @ReactTheme</div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+
+        var clock;
+
+        // Grab the current date
+        var currentDate = new Date();
+
+        // Set some date in the future. In this case, it's always Jan 1
+        var futureDate  = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate(), currentDate.getHours() + 10);
+
+        // Calculate the difference in seconds between the future and current date
+        var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+        // Instantiate a coutdown FlipClock
+        clock = $('#clock').FlipClock(diff, {
+            countdown: true
+        });
+
+
+        // skin changer
+        var $skins = $(".skins-nav .skin");
+        $skins.click(function (e) {
+            e.preventDefault();
+
+            $skins.removeClass("active");
+            $(this).addClass("active");
+
+            if ($(this).hasClass("light")) {
+                $("body").removeClass("dark");
+            } else {
+                $("body").addClass("dark");
+            }
+        });
+
+
+    });
+</script>
+</body>
+</html>

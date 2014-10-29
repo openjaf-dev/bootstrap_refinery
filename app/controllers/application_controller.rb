@@ -72,6 +72,15 @@ class ApplicationController < ActionController::Base
     render 'layouts/_support'
   end
 
+  def status
+    @body_id = 'status'
+    render 'layouts/_status'
+  end
+
+  def error_404
+    render 'layouts/error_404'
+  end
+
   private
 
   def select_layout
@@ -88,6 +97,10 @@ class ApplicationController < ActionController::Base
       'portfolio_item'
     elsif action == 'invoice'
       'invoice'
+    elsif action == 'coming_soon'
+      'coming_soon'
+    elsif action == 'error_404'
+      'error_404'
     end
   end
 
