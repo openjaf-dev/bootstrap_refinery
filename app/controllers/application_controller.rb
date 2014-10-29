@@ -72,8 +72,9 @@ class ApplicationController < ActionController::Base
     render 'layouts/_support'
   end
 
-  def coming_soon
-    render 'layouts/coming_soon'
+  def status
+    @body_id = 'status'
+    render 'layouts/_status'
   end
 
   private
