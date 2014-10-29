@@ -660,9 +660,9 @@ a:focus, button:focus {
   /*background-image: url("http://farm9.staticflickr.com/8222/8254861601_1fbf969a14_b.jpg");*/
   /* These are some ready-to-use backgrounds you can test out by uncommenting them */
   /*background-image: url("../../images/bg2.png");*/
-  background-image: url("../../images/bg3.png");
+  background-image: image-url("bg3.png");
   /*background-image: url("http://25.media.tumblr.com/665f306a0a5a5eae6e0c91f33ce74695/tumblr_mzzqv2P7MY1st5lhmo1_1280.jpg");*/
-  background: -webkit-radial-gradient(closest-corner, rgba(16, 47, 70, 0) 60%, rgba(16, 47, 70, 0.26)), -webkit-linear-gradient(108deg, #5E8199, #153752 90%);*/
+  background: -webkit-radial-gradient(closest-corner, rgba(16, 47, 70, 0) 60%, rgba(16, 47, 70, 0.26)), -webkit-linear-gradient(108deg, #5E8199, #153752 90%);
   background-position: center 16%;
   height: 580px;
   position: relative;
@@ -759,7 +759,7 @@ a:focus, button:focus {
     left: 625px;
     width: 570px;
     height: 333px;
-    background-image: url("../../images/static-hero.png");
+    background-image: image-url("static-hero.png");
     background-repeat: no-repeat; }
     @media (max-width: 991px) {
       #home #hero .img {
@@ -984,7 +984,7 @@ a:focus, button:focus {
   #home #slider .slide-wrapper {
     border-bottom: 1px solid #E4E4E4; }
     #home #slider .slide-wrapper .slideshow {
-      background: url("../../images/slider-bg.png") 0 0 no-repeat;
+      background: image-url("slider-bg.png") 0 0 no-repeat;
       margin: 0 auto;
       margin-top: 35px;
       width: 844px;
@@ -1028,7 +1028,7 @@ a:focus, button:focus {
           -webkit-transform: translateX(0px) !important;
           transform: translateX(0px) !important; }
         #home #slider .slide-wrapper .slideshow .btn-nav.prev {
-          background: url("../../images/slider/slide-left.png") 0 0 no-repeat;
+          background: image-url("slider/slide-left.png") 0 0 no-repeat;
           left: 91px;
           -moz-transform: translateX(-48px);
           -o-transform: translateX(-48px);
@@ -1039,7 +1039,7 @@ a:focus, button:focus {
             #home #slider .slide-wrapper .slideshow .btn-nav.prev {
               left: 30px; } }
         #home #slider .slide-wrapper .slideshow .btn-nav.next {
-          background: url("../../images/slider/slide-right.png") 0 0 no-repeat;
+          background: image-url("slider/slide-right.png") 0 0 no-repeat;
           right: 91px;
           -moz-transform: translateX(48px);
           -o-transform: translateX(48px);
@@ -1284,7 +1284,7 @@ a:focus, button:focus {
       margin: auto 0;
       width: 19px;
       height: 58px;
-      background: url("../../images/slide-arrow.png") no-repeat;
+      background: image-url("slide-arrow.png") no-repeat;
       left: 30px;
       -moz-transform: rotate(180deg);
       -o-transform: rotate(180deg);
@@ -1302,7 +1302,7 @@ a:focus, button:focus {
         margin: auto 0;
         width: 19px;
         height: 58px;
-        background: url("../../images/slide-arrow.png") no-repeat;
+        background: image-url("slide-arrow.png") no-repeat;
         right: 30px; }
   #home2 #hero nav {
     z-index: 999;
@@ -1389,7 +1389,7 @@ a:focus, button:focus {
         #home2 #hero .slides .slide.first {
           padding-top: 50px; } }
       #home2 #hero .slides .slide.first .bg {
-        background-image: url("http://farm9.staticflickr.com/8482/8203794182_8004f8f636_b.jpg");
+        background-image: image-url("http://farm9.staticflickr.com/8482/8203794182_8004f8f636_b.jpg");
         background-position: center 18%; }
         #home2 #hero .slides .slide.first .bg:after {
           background: rgba(52, 52, 58, 0.6); }
@@ -1469,7 +1469,7 @@ a:focus, button:focus {
           padding-top: 40px; } }
       #home2 #hero .slides .slide.second .bg {
         /*background-image: url('http://24.media.tumblr.com/899355a7363be380170ecfcbdc9744d7/tumblr_myp93odkni1st5lhmo1_1280.jpg');*/
-        background-image: url("http://farm4.staticflickr.com/3758/9011116378_32e56983e3_b.jpg");
+        background-image: image-url("http://farm4.staticflickr.com/3758/9011116378_32e56983e3_b.jpg");
         background-position: center 29%; }
         #home2 #hero .slides .slide.second .bg:after {
           background: rgba(5, 11, 29, 0.55); }
@@ -1533,7 +1533,7 @@ a:focus, button:focus {
           #home2 #hero .slides .slide.third {
             padding-top: 50px; } }
         #home2 #hero .slides .slide.third .bg {
-          background-image: url("http://farm6.staticflickr.com/5267/5783999789_9d06e5d7df_b.jpg");
+          background-image: image-url("http://farm6.staticflickr.com/5267/5783999789_9d06e5d7df_b.jpg");
           background-position: center 15%; }
           #home2 #hero .slides .slide.third .bg:after {
             background: rgba(3, 9, 27, 0.5); }
@@ -2165,8 +2165,8 @@ a:focus, button:focus {
     -o-animation-delay: 0.15s;
     -ms-animation-delay: 0.15s;
     animation-delay: 0.15s;
-    /*background-image: url("../../images/bg2.png");*/
-    background-image: url("http://31.media.tumblr.com/fe341bc8e2f82db9e03cbb5a4323a84f/tumblr_mq7ejb3POL1st5lhmo1_1280.jpg"); }
+    /*background-image: image-url("../../images/bg2.png");*/
+    background-image: image-url("http://31.media.tumblr.com/fe341bc8e2f82db9e03cbb5a4323a84f/tumblr_mq7ejb3POL1st5lhmo1_1280.jpg"); }
     @media (max-width: 991px) {
       #home3 #hero #cover-image {
         padding-top: 65px; } }
@@ -2623,7 +2623,7 @@ a:focus, button:focus {
   position: relative;
   top: -60px;
   overflow: hidden;
-  background-image: url("../../images/bg.png");
+  background-image: image-url("bg.png");
   box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.35); }
   @media (max-width: 991px) {
     #home4 #hero {
@@ -3263,7 +3263,7 @@ a:focus, button:focus {
   #features #slider .slide-wrapper {
     border-bottom: 1px solid #E4E4E4; }
     #features #slider .slide-wrapper .slideshow {
-      background: url("../../images/slider-bg.png") 0 0 no-repeat;
+      background: image-url("slider-bg.png") 0 0 no-repeat;
       margin: 0 auto;
       margin-top: 35px;
       width: 844px;
@@ -3307,7 +3307,7 @@ a:focus, button:focus {
           -webkit-transform: translateX(0px) !important;
           transform: translateX(0px) !important; }
         #features #slider .slide-wrapper .slideshow .btn-nav.prev {
-          background: url("../../images/slider/slide-left.png") 0 0 no-repeat;
+          background: image-url("slider/slide-left.png") 0 0 no-repeat;
           left: 91px;
           -moz-transform: translateX(-48px);
           -o-transform: translateX(-48px);
@@ -3318,7 +3318,7 @@ a:focus, button:focus {
             #features #slider .slide-wrapper .slideshow .btn-nav.prev {
               left: 30px; } }
         #features #slider .slide-wrapper .slideshow .btn-nav.next {
-          background: url("../../images/slider/slide-right.png") 0 0 no-repeat;
+          background: image-url("slider/slide-right.png") 0 0 no-repeat;
           right: 91px;
           -moz-transform: translateX(48px);
           -o-transform: translateX(48px);
@@ -3463,7 +3463,7 @@ a:focus, button:focus {
     #services #tabs .hexagons {
       text-align: center; }
       #services #tabs .hexagons .hexagon {
-        background: url("../../images/hexagon.png") 0 0 no-repeat;
+        background: image-url("hexagon.png") 0 0 no-repeat;
         width: 100px;
         height: 113px;
         position: relative;

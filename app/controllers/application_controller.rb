@@ -81,6 +81,17 @@ class ApplicationController < ActionController::Base
     render 'layouts/error_404'
   end
 
+  def features
+    @body_id = 'features'
+    render 'layouts/_features'
+  end
+
+  def services
+    @body_id = 'services'
+    @aditional_css = ['vendor/brankic', 'vendor/animate']
+    render 'layouts/_services'
+  end
+
   private
 
   def select_layout

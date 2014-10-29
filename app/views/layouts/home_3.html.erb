@@ -31,12 +31,10 @@
   <%= link_to 'Home 1(Static)', home_1_path, :class => 'item' %>
   <%= link_to 'Home 2 (Slider)', home_2_path, :class => 'item' %>
   <%= link_to 'Home 3 (Off Canvas-menu)', home_3_path, :class => 'item' %>
-  <a href="features.html" class="item">
-    Features
-  </a>
-  <a href="services.html" class="item">
-    Services
-  </a>
+
+    <%= link_to 'Features', features_path, :class => 'item' %>
+    <%= link_to 'Services', services_path, :class => 'item' %>
+
   <a href="pricing.html" class="item">
     Pricing Charts
   </a>
@@ -46,15 +44,14 @@
 
   <%= link_to 'About us', about_us_path, :class => 'item' %>
 
-  <a href="contactus.html" class="item">
-    Contact us
-  </a>
+  <%= link_to 'Contact us', contact_us_path, :class => 'item' %>
+
+
   <a href="gallery.html" class="item">
     Gallery
   </a>
-  <a href="portfolio.html" class="item">
-    Portfolio
-  </a>
+  <%= link_to 'Portfolio', portfolio_path, :class => 'item' %>
+
   <a href="blog.html" class="item">
     Blog
   </a>
@@ -81,7 +78,7 @@
   <div class="container">
     <div class="navbar-header">
 
-      <%= link_to 'Cenit SaaS', root_path , :class => 'navbar-brand' %>
+      <%= link_to 'Home', root_path , :class => 'navbar-brand' %>
     </div>
     <div class="sidebar-toggle">
       <div class="line"></div>
