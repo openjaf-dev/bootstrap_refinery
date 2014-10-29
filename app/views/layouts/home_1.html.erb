@@ -38,7 +38,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= link_to 'Cenit SaaS',root_path,:class => 'navbar-brand' %>
+      <%= link_to 'Home',root_path,:class => 'navbar-brand' %>
     </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav navbar-right">
@@ -63,8 +63,12 @@
             Showcase <b class="caret"></b>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="features.html">Features</a></li>
-            <li><a href="services.html">Services</a></li>
+            <li>
+              <%= link_to 'Features', features_path %>
+            </li>
+            <li>
+              <%= link_to 'Services', services_path %>
+            </li>
           </ul>
         </li>
         <li class="dropdown">
@@ -84,16 +88,37 @@
             <li>
               <%= link_to 'About us', about_us_path %>
             </li>
-            <li><a href="contactus.html">Contact us</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="portfolio-item.html">Portfolio Item</a></li>
-            <li><a href="invoice.html">Invoice page</a></li>
-            <li><a href="timeline.html">Timeline Page</a></li>
+            <li>
+              <%= link_to 'About us', about_us_path %>
+            </li>
+            <li>
+              <%= link_to 'Contact us', contact_us_path %>
+            </li>
+            <li>
+              <%= link_to 'Gallery', gallery_path %>
+            </li>
+            <li>
+              <%= link_to 'Portfolio', portfolio_path %>
+            </li>
+            <li>
+              <%= link_to 'Portfolio Item', portfolio_item_path %>
+            </li>
+            <li>
+              <%= link_to 'Invoice Page', invoice_path %>
+            </li>
+            <li>
+              <%= link_to 'Timeline Page', timeline_path %>
+            </li>
             <li><a href="docs.html">API Documentation</a></li>
-            <li><a href="support.html">Support</a></li>
-            <li><a href="coming-soon.html">Coming Soon</a></li>
-            <li><a href="status.html">Status</a></li>
+            <li>
+              <%= link_to 'Support', support_path %>
+            </li>
+            <li>
+              <%= link_to 'Coming Soon', coming_soon_path %>
+            </li>
+            <li>
+              <%= link_to 'Status', status_path %>
+            </li>
             <li><a href="signup.html">Sign Up &amp; Sign In</a></li>
             <li><a href="signup-rotate.html">Sign Up Miscellaneous</a></li>
             <li><a href="404.html">404 Page</a></li>
