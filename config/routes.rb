@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   get '/invoice' => 'application#invoice', :as => 'invoice'
   get '/timeline' => 'application#timeline', :as => 'timeline'
   get '/support' => 'application#support', :as => 'support'
+  get '/coming_soon' => 'application#coming_soon', :as => 'coming_soon'
   get '/home_1' => 'application#home_1', :as => 'home_1'
   get '/home_2' => 'application#home_2', :as => 'home_2'
   get '/home_3' => 'application#home_3', :as => 'home_3'

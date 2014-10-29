@@ -72,6 +72,10 @@ class ApplicationController < ActionController::Base
     render 'layouts/_support'
   end
 
+  def coming_soon
+    render 'layouts/coming_soon'
+  end
+
   private
 
   def select_layout
@@ -88,6 +92,8 @@ class ApplicationController < ActionController::Base
       'portfolio_item'
     elsif action == 'invoice'
       'invoice'
+    elsif action == 'coming_soon'
+      'coming_soon'
     end
   end
 
