@@ -101,8 +101,12 @@
           Blog <b class="caret"></b>
         </a>
         <ul class="dropdown-menu">
-          <li><a href="blog.html">Blog </a></li>
-          <li><a href="blogpost.html">Blog post</a></li>
+          <li>
+            <%= link_to 'Blog', blog_path %>
+          </li>
+          <li>
+            <%= link_to 'Blog post', blog_post_path %>
+          </li>
         </ul>
       </li>
     </ul>

@@ -19,6 +19,7 @@ Rails.application.config.assets.precompile += %w( vendor/ionicons.min.css )
 Rails.application.config.assets.precompile += %w( vendor/ionicons.css )
 Rails.application.config.assets.precompile += %w( vendor/entypo.css )
 Rails.application.config.assets.precompile += %w( vendor/flipclock.css )
+Rails.application.config.assets.precompile += %w( vendor/icomoon.css )
 
 
 #JS

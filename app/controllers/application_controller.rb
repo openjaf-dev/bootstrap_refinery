@@ -108,6 +108,18 @@ class ApplicationController < ActionController::Base
     render 'layouts/_comparison_tables'
   end
 
+  def blog
+    @body_id = 'blog'
+    @aditional_css = ['vendor/font-awesome', 'vendor/icomoon']
+    render 'layouts/_blog'
+  end
+
+  def blog_post
+    @body_id = 'blogpost'
+    @aditional_css = ['vendor/font-awesome', 'vendor/icomoon']
+    render 'layouts/_blog_post'
+  end
+
   private
 
   def select_layout
