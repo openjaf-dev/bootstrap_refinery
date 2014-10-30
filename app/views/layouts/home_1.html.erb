@@ -157,7 +157,7 @@
       Get a complete existing website with great design up and running in no time.
     </p>
     <div class="cta animated fadeInDown">
-      <a href="features.html" class="button-outline">See the tour</a>
+      <%= link_to 'See the tour',features_path, :class => 'button-outline' %>
       <%= link_to 'Sign up free', login_view_path ,:class => 'button'%>
     </div>
     <div class="img"></div>
@@ -434,23 +434,23 @@
       <div class="col-sm-3 menu">
         <h3>Overview</h3>
         <ul>
-          <li>
-            <a href="features.html">Features</a>
+          <li class="active">
+            <%= link_to 'Features', features_path %>
           </li>
           <li>
-            <a href="services.html">Services</a>
+            <%= link_to 'Services', services_path %>
           </li>
           <li>
-            <a href="pricing.html">Pricing</a>
+            <%= link_to 'Pricing', pricing_path %>
           </li>
           <li>
-            <a href="support.html">Support</a>
+            <%= link_to 'Support', support_path %>
           </li>
           <li>
-            <a href="blog.html">Blog</a>
+            <%= link_to 'Blog', blog_path %>
           </li>
           <li>
-            <a href="blog.html">Coming soon</a>
+            <%= link_to 'Coming soon', coming_soon_path %>
           </li>
         </ul>
       </div>
@@ -461,17 +461,17 @@
             <%= link_to 'About us', about_us_path %>
           </li>
           <li>
-            <a href="services.html">Contact us</a>
+            <%= link_to 'Contact us', contact_us_path %>
           </li>
           <li>
             <%= link_to 'Jobs', about_us_path %>
             <%= link_to 'We\'re hiring!', about_us_path, :class => 'hiring' %>
           </li>
           <li>
-            <a href="support.html">Portfolio</a>
+            <%= link_to 'Portfolio', portfolio_path %>
           </li>
           <li>
-            <a href="blog.html">Status</a>
+            <%= link_to 'Status', status_path %>
           </li>
         </ul>
       </div>
@@ -479,13 +479,13 @@
         <h3>Social</h3>
         <ul>
           <li>
-            <a href="features.html">Youtube</a>
+            <%= link_to 'Youtube', features_path %>
           </li>
           <li>
-            <a href="services.html">Facebook</a>
+            <%= link_to 'Facebook', features_path %>
           </li>
           <li>
-            <a href="pricing.html">Twitter</a>
+            <%= link_to 'Twitter', features_path %>
           </li>
         </ul>
       </div>

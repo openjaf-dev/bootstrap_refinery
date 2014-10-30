@@ -167,15 +167,15 @@
               React is the best way to get a great design out of the box with lots of options for customization.
             </p>
             <div class="cta">
-              <a href="features.html" class="button-outline">
+              <%= link_to features_path, :class => 'button-outline' do %>
                 TRY IT FREE
                 <i class="fa fa-chevron-right"></i>
-              </a>
+              <% end %>
             </div>
           </div>
           <div class="col-sm-6 hidden-xs mobiles">
             <!-- <img src="images/static-hero.png" class="animated fadeInLeft" alt="devices" /> -->
-            <img src="images/devices3.png" class="animated fadeInLeft img-responsive" alt="devices">
+            <%= image_tag 'devices3.png', :class => 'animated fadeInLeft img-responsive', :alt => 'devices' %>
           </div>
         </div>
       </div>
