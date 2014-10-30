@@ -89,9 +89,6 @@
               <%= link_to 'About us', about_us_path %>
             </li>
             <li>
-              <%= link_to 'About us', about_us_path %>
-            </li>
-            <li>
               <%= link_to 'Contact us', contact_us_path %>
             </li>
             <li>
@@ -119,9 +116,13 @@
             <li>
               <%= link_to 'Status', status_path %>
             </li>
-            <li><a href="signup.html">Sign Up &amp; Sign In</a></li>
-            <li><a href="signup-rotate.html">Sign Up Miscellaneous</a></li>
-            <li><a href="404.html">404 Page</a></li>
+
+            <li>
+              <%= link_to 'Sign Up', login_view_path %>
+            </li>
+            <li>
+              <%= link_to '404 Page', error_404_path %>
+            </li>
           </ul>
         </li>
         <li class="dropdown">
