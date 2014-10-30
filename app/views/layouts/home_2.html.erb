@@ -70,8 +70,12 @@
             <i class="fa fa-chevron-down"></i>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="pricing.html">Pricing charts</a></li>
-            <li><a href="charts.html">Comparison tables</a></li>
+            <li>
+              <%= link_to 'Pricing charts', pricing_path %>
+            </li>
+            <li>
+              <%= link_to 'Comparison tables', comparison_tables_path %>
+            </li>
           </ul>
         </li>
         <li class="dropdown">
@@ -131,7 +135,7 @@
           </ul>
         </li>
         <li>
-          <%= link_to 'Sign up free', sign_up_path, :class => 'signup visible-md visible-lg' %>
+          <%= link_to 'Sign up free', login_view_path, :class => 'signup visible-md visible-lg' %>
         </li>
       </ul>
     </nav>

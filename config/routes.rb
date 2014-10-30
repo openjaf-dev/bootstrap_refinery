@@ -25,6 +25,8 @@ Rails.application.routes.draw do
   get '/error_404' => 'application#error_404', :as => 'error_404'
   get '/features' => 'application#features', :as => 'features'
   get '/services' => 'application#services', :as => 'services'
+  get '/pricing' => 'application#pricing', :as => 'pricing'
+  get '/comparison_tables' => 'application#comparison_tables', :as => 'comparison_tables'
   get '/home_1' => 'application#home_1', :as => 'home_1'
   get '/home_2' => 'application#home_2', :as => 'home_2'
   get '/home_3' => 'application#home_3', :as => 'home_3'
