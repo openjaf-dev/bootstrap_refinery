@@ -86,10 +86,38 @@ class ApplicationController < ActionController::Base
     render 'layouts/_features'
   end
 
+  def coming_soon
+    render 'layouts/coming_soon'
+  end
+
   def services
     @body_id = 'services'
     @aditional_css = ['vendor/brankic', 'vendor/animate']
     render 'layouts/_services'
+  end
+
+  def pricing
+    @body_id = 'pricing'
+    @aditional_css = ['vendor/brankic']
+    render 'layouts/_pricing'
+  end
+
+  def comparison_tables
+    @body_id = 'charts'
+    @aditional_css = ['vendor/entypo', 'vendor/brankic']
+    render 'layouts/_comparison_tables'
+  end
+
+  def blog
+    @body_id = 'blog'
+    @aditional_css = ['vendor/font-awesome', 'vendor/icomoon']
+    render 'layouts/_blog'
+  end
+
+  def blog_post
+    @body_id = 'blogpost'
+    @aditional_css = ['vendor/font-awesome', 'vendor/icomoon']
+    render 'layouts/_blog_post'
   end
 
   private

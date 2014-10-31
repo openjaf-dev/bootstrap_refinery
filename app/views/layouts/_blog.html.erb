@@ -1,0 +1,141 @@
+
+
+<div id="posts">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+
+        <div class="post">
+          <%= link_to blog_post_path, :class => 'pic' do %>
+            <%= image_tag 'blogpost1.png', :class=> 'img-responsive', :alt=> 'blogpost' %>
+          <% end %>
+
+          <div class="title">
+            <%= link_to 'A brief history of climate science', blog_post_path %>
+          </div>
+          <div class="author">
+            <%= image_tag 'testimonials/testimonial2.jpg', :class => 'avatar', :alt => 'author' %>
+            Jessica Smith, October 03, 2013
+          </div>
+          <p class="intro">
+            By Ed Hawkins, University of Reading. Climate change is often seen as a recent phenomenon, but its roots are actually far older — the stuff that is currently happening is beyond my understanding.
+            <br />
+            Some people say design is about solving problems. Obviously designers solve problems but so do dentists. Design is about cultural invention.
+          </p>
+          <%= link_to 'Continue reading this post', blog_post_path, :class => 'continue-reading' %>
+        </div>
+
+        <div class="post">
+          <div class="video">
+            <div class="iframe-wrapper">
+              <iframe src="http://player.vimeo.com/video/22439234" width="620" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="title">
+            <%= link_to 'Discover what is beyond our Solar System', blog_post_path %>
+          </div>
+          <div class="author">
+            <%= image_tag 'testimonials/testimonial1.jpg', :class => 'avatar', :alt => 'author' %>
+            Eric Hoffman, October 11, 2013
+          </div>
+          <p class="intro">
+            By Ed Hawkins, University of Reading. Climate change is often seen as a recent phenomenon, but its roots are actually far older — the stuff that is currently happening is beyond my understanding.
+            <br />
+            Some people say design is about solving problems. Obviously designers solve problems but so do dentists. Design is about cultural invention.
+          </p>
+          <%= link_to 'Continue reading this post', blog_post_path, :class => 'continue-reading' %>
+        </div>
+
+        <div class="post">
+          <%= link_to blog_post_path, :class => 'pic' do %>
+            <%= image_tag 'blogpost2.png', :class=> 'img-responsive', :alt=> 'blogpost' %>
+          <% end %>
+
+          <div class="title">
+            <%= link_to 'How to get really good at programming', blog_post_path %>
+          </div>
+          <div class="author">
+            <%= image_tag 'testimonials/testimonial4.jpg', :class => 'avatar', :alt => 'author' %>
+            Amanda Johnson, September 23, 2013
+          </div>
+          <p class="intro">
+            By Ed Hawkins, University of Reading. Climate change is often seen as a recent phenomenon, but its roots are actually far older — the stuff that is currently happening is beyond my understanding.
+          </p>
+          <%= link_to 'Continue reading this post', blog_post_path, :class => 'continue-reading' %>
+        </div>
+
+        <div class="post">
+          <%= link_to blog_post_path, :class => 'pic' do %>
+              <%= image_tag 'blogpost3.png', :class=> 'img-responsive', :alt=> 'blogpost' %>
+          <% end %>
+
+          <div class="title">
+            <%= link_to 'Get healthy riding a bicycle everyday', blog_post_path %>
+          </div>
+          <div class="author">
+            <%= image_tag 'testimonials/testimonial3.jpg', :class => 'avatar', :alt => 'author' %>
+            Benjamin Andrews, August 16, 2013
+          </div>
+          <p class="intro">
+            By Ed Hawkins, University of Reading. Climate change is often seen as a recent phenomenon, but its roots are actually far older — the stuff that is currently happening is beyond my understanding.
+            <br />
+            Some people say design is about solving problems. Obviously designers solve problems but so do dentists. Design is about cultural invention.
+          </p>
+          <%= link_to 'Continue reading this post', blog_post_path, :class => 'continue-reading' %>
+        </div>
+
+        <div class="pages">
+          <ul class="pagination">
+            <li><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 sidebar">
+        <div class="search">
+          <form>
+            <span class="icomoon-search"></span>
+            <input type="text" name="q" placeholder="Search on blog..." />
+          </form>
+        </div>
+        <div class="updates">
+          <strong>
+            Free blog updates
+            <i class="fa fa-rss"></i>
+          </strong>
+          <p>
+            Never miss an update.
+            Sign up  to receieve an email whenever we post something in the blog.
+          </p>
+        </div>
+        <div class="follow-tw">
+          <%= image_tag 'twitterfollow.png', :alt => 'follow-tw' %>
+        </div>
+        <div class="best-hits">
+          <strong>Check out our best hits:</strong>
+          <a href="#">How to start a business</a>
+          <a href="#">How to sell online</a>
+          <a href="#">Climate change when needed</a>
+          <a href="#">Web development upstart</a>
+          <a href="#">Learn Rails in 30 days</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $(".search input:text").focus(function () {
+            $(".icomoon-search").addClass("active");
+        });
+        $(".search input:text").blur(function () {
+            $(".icomoon-search").removeClass("active");
+        });
+    });
+</script>

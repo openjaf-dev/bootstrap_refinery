@@ -43,8 +43,12 @@
           Pricing <b class="caret"></b>
         </a>
         <ul class="dropdown-menu">
-          <li><a href="pricing.html">Pricing charts</a></li>
-          <li><a href="charts.html">Comparison tables</a></li>
+          <li>
+            <%= link_to 'Pricing charts', pricing_path %>
+          </li>
+          <li>
+            <%= link_to 'Comparison tables', comparison_tables_path %>
+          </li>
         </ul>
       </li>
       <li class="active dropdown">
@@ -83,9 +87,13 @@
           <li>
             <%= link_to 'Status', status_path %>
           </li>
-          <li><a href="signup.html">Sign Up &amp; Sign In</a></li>
-          <li><a href="signup-rotate.html">Sign Up Miscellaneous</a></li>
-          <li><a href="404.html">404 Page</a></li>
+
+          <li>
+            <%= link_to 'Sign Up', login_view_path %>
+          </li>
+          <li>
+            <%= link_to '404 Page', error_404_path %>
+          </li>
         </ul>
       </li>
       <li class="dropdown">
@@ -93,14 +101,18 @@
           Blog <b class="caret"></b>
         </a>
         <ul class="dropdown-menu">
-          <li><a href="blog.html">Blog </a></li>
-          <li><a href="blogpost.html">Blog post</a></li>
+          <li>
+            <%= link_to 'Blog', blog_path %>
+          </li>
+          <li>
+            <%= link_to 'Blog post', blog_post_path %>
+          </li>
         </ul>
       </li>
     </ul>
     <ul class="nav navbar-nav navbar-right visible-md visible-lg">
       <li>
-        <a href="signup.html" class="button">Sign up free</a>
+        <%= link_to 'Sign up free', login_view_path, :class => 'button' %>
       </li>
     </ul>
   </nav>

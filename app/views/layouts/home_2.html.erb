@@ -70,8 +70,12 @@
             <i class="fa fa-chevron-down"></i>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="pricing.html">Pricing charts</a></li>
-            <li><a href="charts.html">Comparison tables</a></li>
+            <li>
+              <%= link_to 'Pricing charts', pricing_path %>
+            </li>
+            <li>
+              <%= link_to 'Comparison tables', comparison_tables_path %>
+            </li>
           </ul>
         </li>
         <li class="dropdown">
@@ -80,9 +84,6 @@
             <i class="fa fa-chevron-down"></i>
           </a>
           <ul class="dropdown-menu">
-            <li>
-              <%= link_to 'About us', about_us_path %>
-            </li>
             <li>
               <%= link_to 'About us', about_us_path %>
             </li>
@@ -114,9 +115,13 @@
             <li>
               <%= link_to 'Status', status_path %>
             </li>
-            <li><a href="signup.html">Sign Up &amp; Sign In</a></li>
-            <li><a href="signup-rotate.html">Sign Up Miscellaneous</a></li>
-            <li><a href="404.html">404 Page</a></li>
+
+            <li>
+              <%= link_to 'Sign Up', login_view_path %>
+            </li>
+            <li>
+              <%= link_to '404 Page', error_404_path %>
+            </li>
           </ul>
         </li>
         <li class="dropdown">
@@ -125,12 +130,16 @@
             <i class="fa fa-chevron-down"></i>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="blogpost.html">Blog Post</a></li>
+            <li>
+              <%= link_to 'Blog', blog_path %>
+            </li>
+            <li>
+              <%= link_to 'Blog post', blog_post_path %>
+            </li>
           </ul>
         </li>
         <li>
-          <%= link_to 'Sign up free', sign_up_path, :class => 'signup visible-md visible-lg' %>
+          <%= link_to 'Sign up free', login_view_path, :class => 'signup visible-md visible-lg' %>
         </li>
       </ul>
     </nav>
@@ -158,15 +167,15 @@
               React is the best way to get a great design out of the box with lots of options for customization.
             </p>
             <div class="cta">
-              <a href="features.html" class="button-outline">
+              <%= link_to features_path, :class => 'button-outline' do %>
                 TRY IT FREE
                 <i class="fa fa-chevron-right"></i>
-              </a>
+              <% end %>
             </div>
           </div>
           <div class="col-sm-6 hidden-xs mobiles">
             <!-- <img src="images/static-hero.png" class="animated fadeInLeft" alt="devices" /> -->
-            <img src="images/devices3.png" class="animated fadeInLeft img-responsive" alt="devices">
+            <%= image_tag 'devices3.png', :class => 'animated fadeInLeft img-responsive', :alt => 'devices' %>
           </div>
         </div>
       </div>

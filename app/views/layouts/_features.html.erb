@@ -194,24 +194,24 @@
     </div>
     <div class="row">
       <div class="col-md-12 pics">
-        <a class="pic" href="blogpost.html">
+        <%= link_to blog_post_path, :class => 'pic' do %>
           <%= image_tag 'blog1.png', :alt => 'blog1' %>
           <div class="bg">
             <p>How to survive in the big city</p>
           </div>
-        </a>
-        <a class="pic" href="blogpost.html">
+        <% end %>
+        <%= link_to blog_post_path, :class => 'pic' do %>
           <%= image_tag 'blog2.png', :alt => 'blog2' %>
           <div class="bg">
             <p>How to develop scalable Rails apps</p>
           </div>
-        </a>
-        <a class="pic" href="blogpost.html">
+        <% end %>
+        <%= link_to blog_post_path, :class => 'pic' do %>
           <%= image_tag 'blog3.png', :alt => 'blog3' %>
           <div class="bg">
             <p>Enjoy your life at the beach</p>
           </div>
-        </a>
+        <% end %>
       </div>
     </div>
   </div>
