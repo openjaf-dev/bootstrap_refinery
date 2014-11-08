@@ -1,5 +1,5 @@
-#source 'https://rubygems.org'
-source 'file:///home/jorge/mygems/'
+source 'https://rubygems.org'
+#source 'file:///home/jorge/mygems/'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
@@ -28,9 +28,13 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
-gem 'refinerycms', :path => '../refinerycms', :branch => 'master'
-gem 'refinerycms-i18n', path: '../refinerycms-i18n', branch: 'master'
-gem 'seo_meta', path: '../seo_meta', branch: 'master'
+#gem 'refinerycms', :path => '../refinerycms', :branch => 'master'
+#gem 'refinerycms-i18n', path: '../refinerycms-i18n', branch: 'master'
+#gem 'seo_meta', path: '../seo_meta', branch: 'master'
+
+gem 'refinerycms', github: 'refinery/refinerycms', branch: 'master'
+gem 'refinerycms-i18n', github: 'refinery/refinerycms-i18n', branch: 'master'
+gem 'seo_meta', github: 'parndt/seo_meta', branch: 'master'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
